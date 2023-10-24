@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        article {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 span {
+            font-size: 72px; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>
+        <span>sharing...</span>
+    </h1>
+</header>
+
+
+<html>
+<head>
+<style>
+  nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: #ffffff;
+  }
+
+  /* 鼠标悬停时的样式 */
+  nav a:hover {
+    background-color: #4da13e;
+  }
+
+  /* 下拉菜单容器的样式 */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* 下拉菜单内容的样式 */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* 下拉菜单链接的样式 */
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* 显示下拉菜单内容 */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+</head>
+
+
+<nav>
+    <a href="index.html">首页</a> 
+    <div class="dropdown">
+        <a href="daily.html" class="active">图片</a> 
+        <div class="dropdown-content">
+            <a href="#album">我喜欢的专辑</a>
+            <a href="#fujian">在福建</a>
+        </div>
+    </div>
+    <a href="share.html">分享</a>
+    <a href="fakeBilibili.html">fakeBilibili</a> 
+</nav>
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing
+    </title>
+
+
+    <div class="article-sidebar">
+        <h2>文章目录:</h2>
+        <ul>
+            <li><a href="NFR.html">[原创]Norman Fucking Rockwell!——怀旧过后，何以面向未来？ ——Track 1</a></li>
+            <li><a href="ygz.html">听听那冷雨 余光中</a></li>
+            <li><a href="zzq.html">荷塘月色 朱自清</a></li>
+        </ul>
+    </div>
+</body>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章搜索</title>
+</head>
+<body>
+    <h3>文章搜索</h3>
+    <input type="text" id="searchInput" placeholder="输入关键词">
+    <button onclick="searchArticles()">搜索</button>
+
+    <div id="searchResults">
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+nav {
+    text-align: center;
+    background-color: #333;
+}
+nav a {
+    padding: 14px 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+nav a.active {
+    background-color: #4CAF50; /* 为当前页面的链接添加不同的样式 */
+}
+article {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+
+.animated-element {
+    transition: all 0.3s ease-in-out; /* 简单的渐变效果 */
+}
+
+.animated-element:hover {
+    transform: scale(1.1); /* 鼠标悬停时元素放大 */
+}
+
+@keyframes example-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.element-with-keyframe-animation {
+    animation: example-animation 2s infinite; /* 应用关键帧动画 */
+}

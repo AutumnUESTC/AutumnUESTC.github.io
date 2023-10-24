@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fakeBilibili首页</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bilibilistyles.css">
+</head>
+
+<style>
+    .img-description {
+        position: absolute; 
+        bottom: 5px; 
+        left: 5px;
+        right: 5px;
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: rgb(131, 166, 219); 
+        padding: 10px;
+        visibility: hidden; 
+        opacity: 0; 
+        transition: visibility 0.2s, opacity 0.2s; 
+    }
+
+    .navbar-brand{
+        color:deeppink
+    }
+
+  nav a:hover {
+    background-color: #ffffff;
+  }
+</style>
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">fakeBilibili</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href>热门</a>
+                        <div class="dropdown-content">
+                            <a href=>法外狂徒</a>
+                            <a href=>情节严重</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href>直播</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=>影视</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=>忘了还有啥了（）</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src=".\bilibili\罗翔.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src=".\bilibili\轮播.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>  
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4 mb-4">
+                <div class="card">
+                    <a href="video.html"></a>
+                    <img src=".\bilibili\M.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Confession Tour</h5>
+                        <p class="card-text">UP主: 嗯哼</p>
+                        <p class="card-text">播放: 2006万 评论: 1万</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="card">
+                    <img src=".\bilibili\祺贵人.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">臣妾要告发</h5>
+                        <p class="card-text">UP主: 法外狂徒张三</p>
+                        <p class="card-text">播放: 10万 评论: 1万</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="card">
+                    <img src=".\bilibili\游乐.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">我变成什么亚子都雨女无瓜</h5>
+                        <p class="card-text">UP主: 摸仙堡狂徒游乐</p>
+                        <p class="card-text">播放: 2333万 评论: 1万</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="card">
+                    <img src=".\bilibili\张飞.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">俺也一样</h5>
+                        <p class="card-text">UP主: 哥哥呢</p>
+                        <p class="card-text">播放: 233万 评论: 1万</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <div class="card">
+                    <img src=".\bilibili\cdl.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bing~</h5>
+                        <p class="card-text">UP主: 我真的不是南桐</p>
+                        <p class="card-text">播放: 1997万 评论: 1万</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="bilibiliscripts.js"></script>
+</body>
+</html>
