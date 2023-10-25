@@ -26,11 +26,57 @@
         color:deeppink
     }
 
-  nav a:hover {
+    nav a:hover {
     background-color: #ffffff;
+    }
+
+      /* 下拉菜单容器的样式 */
+  .dropdown {
+      position: relative;
+      display: inline-block;
   }
-</style>
+  /* 下拉菜单内容的样式 */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
+        z-index: 1;
+  }
+
+  /* 下拉菜单链接的样式 */
+  .dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* 显示下拉菜单内容 */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .hover-text {
+    color: black;  /* 默认字体颜色 */
+}
+
+.hover-text:hover {
+    color: rgb(235, 85, 172);  /* 悬停时的字体颜色 */
+}
     
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    }
+
+.card{
+    width:300px;
+}
+
+
+</style>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -40,26 +86,27 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">首页</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href>热门</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">热门</a>
                         <div class="dropdown-content">
-                            <a href=>法外狂徒</a>
-                            <a href=>情节严重</a>
+                            <a class="hover-text" href="#">法外狂徒</a>
+                            <a class="hover-text" href="#">情节严重</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href>直播</a>
+                        <a class="nav-link" href="#">直播</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=>影视</a>
+                        <a class="nav-link" href="#">影视</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=>忘了还有啥了（）</a>
+                        <a class="nav-link" href="#">忘了还有啥了（）</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
 
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -79,28 +126,30 @@
         <div class="row">
             <div class="col-sm-4 mb-4">
                 <div class="card">
-                    <a href="video.html"></a>
-                    <img src=".\bilibili\M.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Confession Tour</h5>
-                        <p class="card-text">UP主: 嗯哼</p>
-                        <p class="card-text">播放: 2006万 评论: 1万</p>
-                    </div>
+                    <a href="https://autumnuestc.github.io/video.html"></a>
+                        <img src=".\bilibili\M.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Confession Tour</h5>
+                            <p class="card-text">UP主: 嗯哼</p>
+                            <p class="card-text">播放: 2006万 评论: 1万</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-4 mb-4">
                 <div class="card">
-                    <img src=".\bilibili\祺贵人.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">臣妾要告发</h5>
-                        <p class="card-text">UP主: 法外狂徒张三</p>
-                        <p class="card-text">播放: 10万 评论: 1万</p>
-                        
-                    </div>
+                    <a href="https://autumnuestc.github.io/video.html"></a>
+                         <img src=".\bilibili\祺贵人.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">臣妾要告发</h5>
+                               <p class="card-text">UP主: 法外狂徒张三</p>
+                               <p class="card-text">播放: 10万 评论: 1万</p>
+                         </div>
                 </div>
             </div>
             <div class="col-sm-4 mb-4">
                 <div class="card">
+                    <a href="https://autumnuestc.github.io/video.html"></a>
                     <img src=".\bilibili\游乐.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">我变成什么亚子都雨女无瓜</h5>
@@ -111,6 +160,7 @@
             </div>
             <div class="col-sm-4 mb-4">
                 <div class="card">
+                    <a href="https://autumnuestc.github.io/video.html"></a>
                     <img src=".\bilibili\张飞.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">俺也一样</h5>
@@ -121,13 +171,14 @@
             </div>
             <div class="col-sm-4 mb-4">
                 <div class="card">
+                <a href="https://autumnuestc.github.io/video.html"></a>
                     <img src=".\bilibili\cdl.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Bing~</h5>
                         <p class="card-text">UP主: 我真的不是南桐</p>
                         <p class="card-text">播放: 1997万 评论: 1万</p>
                     </div>
-                </div>
+                </div>    
             </div>
         </div>
     </div>
